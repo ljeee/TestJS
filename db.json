@@ -1,0 +1,35 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "user": "riwi",
+      "edad": 25,
+      "role": "admin",
+      "password": "admin"
+    },
+    {
+      "id": 2,
+      "user": "riwitest",
+      "edad": 30,
+      "role": "user",
+      "password": "1234"
+    }
+  
+  ],
+  "curses": [
+    {
+      "id": 1,
+      "name": "Charla sobre IA",
+      "description": "hablaremos de IA y sus aplicaciones",
+      "dateOfEvent": "2023-10-01",
+      "capacity": "100"
+    },
+    {
+      "id": 2,
+      "name": "Fetch y Promesas",
+      "description": "Como odio esto xd",
+      "dateOfEvent": "2025-10-01",
+      "capacity": "50"
+    }
+  ]
+}
