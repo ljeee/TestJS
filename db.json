@@ -1,35 +1,83 @@
 {
   "usuarios": [
     {
-      "id": 1,
-      "user": "riwi",
-      "edad": 25,
+      "id": "1",
+      "user": "david",
+      "email": "elmejorTL@gmail.com",
       "role": "admin",
       "password": "admin"
     },
     {
-      "id": 2,
+      "id": "2",
       "user": "riwitest",
-      "edad": 30,
+      "email": "riwi@test",
       "role": "user",
-      "password": "1234"
+      "password": "1234",
+      "courses": [
+        "b7c2",
+        "c8d3",
+        "d9e4",
+        "j6k0",
+        "f2e1"
+      ]
     }
-  
   ],
-  "curses": [
+  "courses": [
     {
-      "id": 1,
-      "name": "Charla sobre IA",
-      "description": "hablaremos de IA y sus aplicaciones",
-      "dateOfEvent": "2023-10-01",
-      "capacity": "100"
+      "id": "c8d3",
+      "name": "Taller de CSS",
+      "description": "Domina estilos modernos",
+      "dateOfEvent": "2025-09-05",
+      "capacity": "25"
     },
     {
-      "id": 2,
-      "name": "Fetch y Promesas",
-      "description": "Como odio esto xd",
-      "dateOfEvent": "2025-10-01",
-      "capacity": "50"
+      "id": "d9e4",
+      "name": "Introducción a Python",
+      "description": "Curso básico de Python para principiantes",
+      "dateOfEvent": "2025-10-15",
+      "capacity": "40"
+    },
+    {
+      "id": "e1f5",
+      "name": "Curso de React",
+      "description": "Fundamentos de React y hooks",
+      "dateOfEvent": "2025-11-20",
+      "capacity": "35"
+    },
+    {
+      "id": "f2g6",
+      "name": "Node.js para principiantes",
+      "description": "Backend con Node.js y Express",
+      "dateOfEvent": "2025-12-01",
+      "capacity": "28"
+    },
+    {
+      "id": "g3h7",
+      "name": "Bases de Datos SQL",
+      "description": "Aprende MySQL y PostgreSQL",
+      "dateOfEvent": "2026-01-10",
+      "capacity": "32"
+    },
+    {
+      "name": "Taller de Git y GitHub",
+      "description": "Control de versiones profesional",
+      "dateOfEvent": "2026-03-05",
+      "capacity": "20",
+      "id": "i5j9"
+    },
+    {
+      "name": "Curso de TypeScript",
+      "description": "Tipado estático en JavaScript",
+      "dateOfEvent": "2026-04-12",
+      "capacity": "20",
+      "id": "j6k0"
+    },
+    {
+      "id": "f2e1",
+      "name": "Testfinal",
+      "description": "Testfinal",
+      "dateOfEvent": "6666-06-06",
+      "capacity": "666"
     }
   ]
 }

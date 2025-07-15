@@ -1,0 +1,258 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #2c2c2c;
+  margin: 0;
+  color: #222;
+}
+
+nav#navbar {
+  background: #a30cdf;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+nav#navbar a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+  font-size: 180%;
+}
+nav#navbar a:hover {
+  background: #ba10fd;
+}
+
+main#content {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #0a0a0ac7;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+#profile {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 4px rgba(44,62,80,0.07);
+}
+
+h2 {
+  margin-top: 0;
+  color: #ac20e4;
+  display: flex;
+  justify-content: center;
+}
+
+#profile h2 {
+  margin-top: 0;
+  color: #8e1abc;
+}
+
+#container-curses > div {
+  background: #f9fafc;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(44,62,80,0.07);
+  margin-bottom: 1.5rem;
+  padding: 1rem 2rem;
+  border: 1px solid #e1e4ea;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+button, input[type="submit"] {
+  background: #bb0eff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: background 0.2s;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+button:disabled {
+  background: #b2bec3;
+  cursor: not-allowed;
+}
+button:hover:not(:disabled), input[type="submit"]:hover:not(:disabled) {
+  background: #ba10fd;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+form label {
+  font-weight: 500;
+  color: #ffffff;
+}
+form input, form textarea {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #e1e4ea;
+  font-size: 1rem;
+  background: #f4f6fb;
+}
+form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.admin-btn {
+  background: #34495e;
+}
+.admin-btn:hover {
+  background: #2d3e50;
+}
+
+.enroll-btn {
+  background: #1abc9c;
+}
+.enroll-btn:disabled {
+  background: #b2bec3;
+}
+
+@media (max-width: 600px) {
+  main#content {
+    padding: 1rem;
+  }
+  #container-curses > div {
+    padding: 1rem;
+  }
+  form {
+    max-width: 100%;
+  }
+}
+
+
+.rainbow {
+  font-weight: bold;
+  color: #ff00ff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  animation: colorRotate 10s infinite linear;
+}
+
+/* Box shadow animado para los divs de cursos */
+div {
+  box-shadow: 0 0 20px 4px #ff00ff;
+  animation: boxShadowRotate 4s infinite linear;
+}
+
+@keyframes boxShadowRotate {
+  0%   { box-shadow: 0 0 20px 4px #ff00ff; }
+  20%  { box-shadow: 0 0 20px 4px #fd6906; }
+  40%  { box-shadow: 0 0 20px 4px #00ff22; }
+  60%  { box-shadow: 0 0 20px 4px #00ffff; }
+  80%  { box-shadow: 0 0 20px 4px #6200ff; }
+  100% { box-shadow: 0 0 20px 4px #ff00ff; }
+}
+
+@keyframes colorRotate {
+  0% {
+    color: #ffffff;
+    text-shadow: 0px 0px 3px #ffffff;
+  }
+  10% {
+    color: #ff8080;
+    text-shadow: 0px 0px 3px #ff8080;
+  }
+  20% {
+    color: #ff0000;
+    text-shadow: 0px 0px 3px #ff0000;
+  }
+  30% {
+    color: #fe3403;
+    text-shadow: 0px 0px 3px #fe3403;
+  }
+  40% {
+    color: #fd6906;
+    text-shadow: 0px 0px 3px #fd6906;
+  }
+  50% {
+    color: #80c21a;
+    text-shadow: 0px 0px 3px #80c21a;
+  }
+  60% {
+    color: #00ff22;
+    text-shadow: 0px 0px 3px #00ff22;
+  }
+  70% {
+    color: #00cc99;
+    text-shadow: 0px 0px 3px #00cc99;
+  }
+  80% {
+    color: #00ffff;
+    text-shadow: 0px 0px 3px #00ffff;
+  }
+  90% {
+    color: #0066cc;
+    text-shadow: 0px 0px 3px #0066cc;
+  }
+  100% {
+    color: #6200ff;
+    text-shadow: 0px 0px 3px #8400ff;
+  }
+}
+
+@keyframes boxRotate {
+  0% {
+    color: #ffffff;
+    text-shadow: 0px 0px 3px #ffffff;
+  }
+  10% {
+    color: #ff8080;
+    text-shadow: 0px 0px 3px #ff8080;
+  }
+  20% {
+    color: #ff0000;
+    text-shadow: 0px 0px 3px #ff0000;
+  }
+  30% {
+    color: #fe3403;
+    text-shadow: 0px 0px 3px #fe3403;
+  }
+  40% {
+    color: #fd6906;
+    text-shadow: 0px 0px 3px #fd6906;
+  }
+  50% {
+    color: #80c21a;
+    text-shadow: 0px 0px 3px #80c21a;
+  }
+  60% {
+    color: #00ff22;
+    text-shadow: 0px 0px 3px #00ff22;
+  }
+  70% {
+    color: #00cc99;
+    text-shadow: 0px 0px 3px #00cc99;
+  }
+  80% {
+    color: #00ffff;
+    text-shadow: 0px 0px 3px #00ffff;
+  }
+  90% {
+    color: #0066cc;
+    text-shadow: 0px 0px 3px #0066cc;
+  }
+  100% {
+    color: #6200ff;
+    text-shadow: 0px 0px 3px #8400ff;
+  }
+}
